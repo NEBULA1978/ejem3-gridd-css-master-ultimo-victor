@@ -1,0 +1,70 @@
+/* Estilos generales para toda la página */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Estilos para el contenedor del diseño de rejilla */
+.grid-layout {
+    height: auto;
+    /* Cambiar la altura a 'auto' para que se ajuste dinámicamente al contenido */
+    display: grid;
+    grid-template-areas:
+        'cabecera'
+        'menu'
+        'contenido'
+        'lateral'
+        'footer';
+    grid-template-rows: auto;
+    /* Ajustar la altura de las filas automáticamente */
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+/* Estilos para los elementos de la rejilla (cajas) */
+.caja {
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos individuales para cada caja */
+.c1 {
+    grid-area: cabecera;
+    background-color: lightsteelblue;
+}
+
+.c2 {
+    grid-area: menu;
+    background-color: lightyellow;
+}
+
+.c3 {
+    grid-area: contenido;
+    background-color: lightyellow;
+}
+
+.c4 {
+    grid-area: lateral;
+    background-color: lightsalmon;
+}
+
+.c5 {
+    grid-area: footer;
+    background-color: lightseagreen;
+}
+
+/* Media query para dispositivos con un ancho máximo de 600px (tamaño móvil) */
+@media (max-width: 600px) {
+    .grid-layout {
+        grid-template-areas:
+            'cabecera'
+            'menu'
+            'contenido'
+            'lateral'
+            'footer';
+        grid-template-rows: auto;
+    }
+}

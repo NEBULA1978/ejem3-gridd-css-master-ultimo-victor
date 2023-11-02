@@ -1,0 +1,201 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grid-layout{
+    height: 650px;
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'footer footer';
+
+    grid-template-rows: 20% 10% auto 10%;
+    background-color: lightgreen;
+    border: 1px solid black;
+    
+
+ 
+    background-color: lightgreen;
+    
+    border: 1px solid black;
+
+}
+
+.caja {
+    
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.c1{
+    grid-area: cabecera;
+    background-color: lightsteelblue;
+}
+.c2{
+    grid-area: menu;
+    background-color: lightyellow;
+    
+}
+.c3{
+    
+    grid-area: contenido;
+    background-color: lightyellow;
+
+}
+.c4{
+   grid-area: lateral;
+    background-color: lightsalmon;
+
+}
+.c5{
+    grid-area: footer;
+    background-color: lightseagreen;
+    
+}
+.c5{
+    
+    background-color: lightslategrey;
+}
+
+/* General styles for the entire page */
+body {
+    background-color: antiquewhite; /* Background color for the body */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* Font styles */
+    text-align: center; /* Center-align text within the body */
+}
+
+/* Styles for the grid layout container */
+.grid-layout {
+    height: 650px; /* Set a fixed height for the grid layout */
+    display: grid; /* Use grid display */
+    grid-template-areas: 
+        'cabecera cabecera' /* Define grid areas for header */
+        'menu menu' /* Define grid areas for menu */
+        'contenido lateral' /* Define grid areas for main content and sidebar */
+        'footer footer'; /* Define grid areas for footer */
+    grid-template-rows: 20% 10% auto 10%; /* Set height distribution for rows */
+    background-color: lightgreen; /* Background color for the grid */
+    border: 1px solid black; /* Add a border to the grid */
+
+}
+
+/* Styles for the grid items (boxes) */
+.caja {
+    border: 4px solid black; /* Border for each box */
+    background-color: lightgray; /* Background color for each box */
+    text-align: center; /* Center-align text within each box */
+    padding: 20px; /* Add padding to each box */
+}
+
+/* Individual styles for each box */
+.c1 {
+    grid-area: cabecera; /* Assign the box to the 'cabecera' grid area */
+    background-color: lightsteelblue; /* Background color for the header box */
+}
+.c2 {
+    grid-area: menu; /* Assign the box to the 'menu' grid area */
+    background-color: lightyellow; /* Background color for the menu box */
+}
+.c3 {
+    grid-area: contenido; /* Assign the box to the 'contenido' grid area */
+    background-color: lightyellow; /* Background color for the main content box */
+}
+.c4 {
+    grid-area: lateral; /* Assign the box to the 'lateral' grid area */
+    background-color: lightsalmon; /* Background color for the sidebar box */
+}
+.c5 {
+    grid-area: footer; /* Assign the box to the 'footer' grid area */
+    background-color: lightseagreen; /* Background color for the footer box */
+}
+
+/* //////////////////////////7 */
+/* //////////////////////////7 */
+
+/* General styles for the entire page */
+body {
+    background-color: antiquewhite;
+    /* Background color for the body */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* Font styles */
+    text-align: center;
+    /* Center-align text within the body */
+}
+
+/* Styles for the grid layout container */
+.grid-layout {
+    height: 650px;
+    /* Set a fixed height for the grid layout */
+    display: grid;
+    /* Use grid display */
+    grid-template-areas:
+        'cabecera cabecera'
+        /* Define grid areas for header */
+        'menu menu'
+        /* Define grid areas for menu */
+        'contenido lateral'
+        /* Define grid areas for main content and sidebar */
+        'footer footer';
+    /* Define grid areas for footer */
+    grid-template-rows: 20% 10% auto 10%;
+    /* Set height distribution for rows */
+    background-color: lightgreen;
+    /* Background color for the grid */
+    border: 1px solid black;
+    /* Add a border to the grid */
+
+}
+
+/* Styles for the grid items (boxes) */
+.caja {
+    border: 4px solid black;
+    /* Border for each box */
+    background-color: lightgray;
+    /* Background color for each box */
+    text-align: center;
+    /* Center-align text within each box */
+    padding: 20px;
+    /* Add padding to each box */
+}
+
+/* Individual styles for each box */
+.c1 {
+    grid-area: cabecera;
+    /* Assign the box to the 'cabecera' grid area */
+    background-color: lightsteelblue;
+    /* Background color for the header box */
+}
+
+.c2 {
+    grid-area: menu;
+    /* Assign the box to the 'menu' grid area */
+    background-color: lightyellow;
+    /* Background color for the menu box */
+}
+
+.c3 {
+    grid-area: contenido;
+    /* Assign the box to the 'contenido' grid area */
+    background-color: lightyellow;
+    /* Background color for the main content box */
+}
+
+.c4 {
+    grid-area: lateral;
+    /* Assign the box to the 'lateral' grid area */
+    background-color: lightsalmon;
+    /* Background color for the sidebar box */
+}
+
+.c5 {
+    grid-area: footer;
+    /* Assign the box to the 'footer' grid area */
+    background-color: lightseagreen;
+    /* Background color for the footer box */
+}

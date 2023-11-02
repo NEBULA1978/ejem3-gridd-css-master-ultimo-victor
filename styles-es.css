@@ -1,0 +1,80 @@
+/* Estilos generales para toda la página */
+body {
+    background-color: antiquewhite;
+    /* Color de fondo para el cuerpo */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* Estilos de fuente */
+    text-align: center;
+    /* Alineación central del texto en el cuerpo */
+}
+
+/* Estilos para el contenedor del diseño de rejilla */
+.grid-layout {
+    height: 650px;
+    /* Establece una altura fija para el diseño de rejilla */
+    display: grid;
+    /* Utiliza la visualización en rejilla */
+    grid-template-areas:
+        'cabecera cabecera'
+        /* Define áreas de rejilla para la cabecera */
+        'menu menu'
+        /* Define áreas de rejilla para el menú */
+        'contenido lateral'
+        /* Define áreas de rejilla para el contenido principal y la barra lateral */
+        'footer footer';
+    /* Define áreas de rejilla para el pie de página */
+    grid-template-rows: 20% 10% auto 10%;
+    /* Establece la distribución de altura para las filas */
+    background-color: lightgreen;
+    /* Color de fondo para la rejilla */
+    border: 1px solid black;
+    /* Agrega un borde a la rejilla */
+}
+
+/* Estilos para los elementos de la rejilla (cajas) */
+.caja {
+    border: 4px solid black;
+    /* Borde para cada caja */
+    background-color: lightgray;
+    /* Color de fondo para cada caja */
+    text-align: center;
+    /* Alineación central del texto dentro de cada caja */
+    padding: 20px;
+    /* Agrega relleno a cada caja */
+}
+
+/* Estilos individuales para cada caja */
+.c1 {
+    grid-area: cabecera;
+    /* Asigna la caja al área de rejilla 'cabecera' */
+    background-color: lightsteelblue;
+    /* Color de fondo para la caja de cabecera */
+}
+
+.c2 {
+    grid-area: menu;
+    /* Asigna la caja al área de rejilla 'menu' */
+    background-color: lightyellow;
+    /* Color de fondo para la caja de menú */
+}
+
+.c3 {
+    grid-area: contenido;
+    /* Asigna la caja al área de rejilla 'contenido' */
+    background-color: lightyellow;
+    /* Color de fondo para la caja de contenido principal */
+}
+
+.c4 {
+    grid-area: lateral;
+    /* Asigna la caja al área de rejilla 'lateral' */
+    background-color: lightsalmon;
+    /* Color de fondo para la caja de la barra lateral */
+}
+
+.c5 {
+    grid-area: footer;
+    /* Asigna la caja al área de rejilla 'footer' */
+    background-color: lightseagreen;
+    /* Color de fondo para la caja del pie de página */
+}
